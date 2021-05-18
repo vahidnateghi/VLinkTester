@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VLinkTester</class>
+ <widget class="QMainWindow" name="VLinkTester">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>764</width>
+    <height>464</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VLink_Tester</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>10</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="title">
+        <string>Packs</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="CompLinePack" name="wgPack1" native="true"/>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="CompLinePack" name="wgPack2" native="true"/>
+        </item>
+        <item>
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="CompLinePack" name="wgPack3" native="true"/>
+        </item>
+        <item>
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="CompLinePack" name="wgPack4" native="true"/>
+        </item>
+        <item>
+         <widget class="Line" name="line_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>186</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>10</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="title">
+        <string>Links</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,10,0,0,10">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Send</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="chbxShowSentBytes">
+            <property name="text">
+             <string>Show Sent Bytes</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="txtSent">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="Line" name="line_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Receive</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_7">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="chbxShowRxBytes">
+            <property name="text">
+             <string>Show Received Bytes</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="txtReceived">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>764</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuLinks">
+    <property name="title">
+     <string>Links</string>
+    </property>
+    <addaction name="actionExport_Link_Configs"/>
+    <addaction name="actionImport_Link_Configs"/>
+    <addaction name="actionSave_Link_Configs_as_Default"/>
+   </widget>
+   <widget class="QMenu" name="menuConfig">
+    <property name="title">
+     <string>Packs</string>
+    </property>
+    <addaction name="actionExport_Packs"/>
+    <addaction name="actionImport_Packs"/>
+    <addaction name="actionSave_Packs_as_Default"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuLinks"/>
+   <addaction name="menuConfig"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionUDPStart"/>
+   <addaction name="actionUDP"/>
+   <addaction name="separator"/>
+   <addaction name="actionSerialStart"/>
+   <addaction name="actionSerial"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionUDP">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/Icons/Settings.png</normaloff>:/Icons/Settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>UDPSettings</string>
+   </property>
+  </action>
+  <action name="actionSerial">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/Icons/Settings.png</normaloff>:/Icons/Settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>SerialSettings</string>
+   </property>
+  </action>
+  <action name="actionUDPStart">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/Icons/Play.png</normaloff>:/Icons/Play.png</iconset>
+   </property>
+   <property name="text">
+    <string>UDPStart</string>
+   </property>
+  </action>
+  <action name="actionSerialStart">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/Icons/Play.png</normaloff>:/Icons/Play.png</iconset>
+   </property>
+   <property name="text">
+    <string>SerialStart</string>
+   </property>
+  </action>
+  <action name="actionExport_Packs">
+   <property name="text">
+    <string>Export Packs</string>
+   </property>
+  </action>
+  <action name="actionImport_Packs">
+   <property name="text">
+    <string>Import Packs</string>
+   </property>
+  </action>
+  <action name="actionExport_Link_Configs">
+   <property name="text">
+    <string>Export Link Configs</string>
+   </property>
+  </action>
+  <action name="actionImport_Link_Configs">
+   <property name="text">
+    <string>Import Link Configs</string>
+   </property>
+  </action>
+  <action name="actionSave_Link_Configs_as_Default">
+   <property name="text">
+    <string>Save Link Configs as Default</string>
+   </property>
+  </action>
+  <action name="actionSave_Packs_as_Default">
+   <property name="text">
+    <string>Save Packs as Default</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>CompLinePack</class>
+   <extends>QWidget</extends>
+   <header location="global">Components/CompPack.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
